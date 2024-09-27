@@ -19,7 +19,7 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v4
         with:
-          java-version: '17'
+          java-version: '8'
           distribution: 'microsoft'
 
       - name: Build with Maven
@@ -51,4 +51,4 @@ jobs:
           app-name: 'icedemoo'
           slot-name: 'Production'
           package: '*.war'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7A2A2B045DCB4F9EA4AF9E31AD1D7E55 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9FED760AD31C431FA746895BE1A97351 }}
